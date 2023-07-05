@@ -45,7 +45,7 @@ function Orders() {
     // e.preventDefault();
     // console.log(e);
     await axios
-      .post("http://13.49.173.228/shopify/neworder", e)
+      .post("https://faster-education.com/shopify/neworder", e)
       .then((response) => {
         console.log(response);
       })

@@ -39,14 +39,14 @@ function App() {
     chagtotal(e);
   };
   const getusers = async () => {
-    const res = await axios.get("http://13.49.173.228/shopify/getusers");
+    const res = await axios.get("https://faster-education.com/shopify/getusers");
 
     setusers(res.data);
   };
 
   const getallproducts = async (e) => {
     const products = await axios.get(
-      `http://13.49.173.228/shopify/getallproducts/${currancyvalue}/${userid}`
+      `https://faster-education.com/shopify/getallproducts/${currancyvalue}/${userid}`
     );
     // console.log(products);
     setstate({ products: products.data });
@@ -71,7 +71,7 @@ function App() {
   //
   // Calling BackEnd with Axios
   // const products = await axios.get(
-  //   `http://13.49.173.228/shopify/getallproducts/AED/64a05e4f234f4b27fcdac43f`
+  //   `https://faster-education.com/shopify/getallproducts/AED/64a05e4f234f4b27fcdac43f`
   // );
   // set state
   // this.setState({ products });

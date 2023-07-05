@@ -6,7 +6,7 @@ import { useParams, useNavigate } from "react-router-dom";
 function AddUser(props) {
   const [users, setusers] = useState(props.users);
   // const Axios = async () => {
-  //   const res = await axios.get("http://13.49.173.228/shopify/getusers");
+  //   const res = await axios.get("https://faster-education.com/shopify/getusers");
 
   //   setusers(res.data);
   // };
@@ -48,7 +48,7 @@ function AddUser(props) {
     e.preventDefault();
     const obj = { username: e.target.username.value };
     await axios
-      .post("http://13.49.173.228/shopify/newuser", obj)
+      .post("https://faster-education.com/shopify/newuser", obj)
       .then((response) => {
         console.log(response.data);
       })

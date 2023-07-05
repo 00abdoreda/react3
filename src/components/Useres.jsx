@@ -29,7 +29,7 @@ function Useres() {
     // BackEnd delete
     // try {
     // call B
-    await axios.delete(`http://13.49.173.228/shopify/deleteusers/${item._id}`);
+    await axios.delete(`https://faster-education.com/shopify/deleteusers/${item._id}`);
     // setusers({ users });
     window.location.reload();
 

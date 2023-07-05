@@ -63,7 +63,7 @@ const ProductEdit = (props) => {
       delete newS.id;
       delete newS.count;
       delete newS.isInCart;
-  await axios.post(`http://13.49.173.228/shopify/newproduct`,newS);
+  await axios.post(`https://faster-education.com/shopify/newproduct`,newS);
       // if i have backend server
       // const obj = { ...state, count: 0, isInCart: false };
       // // Post Data To DataBase
